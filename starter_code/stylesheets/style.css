@@ -1,7 +1,662 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+@charset "UTF-8";
+/* GENERAL */
+@import url(//db.onlinewebfonts.com/c/de16c7ab9fd1d3e0db7b129ae8356d18?family=Glosa+Display);
+* {
+  font-family: Glosa;
+  background-color: #FFF;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  min-width: 566px;
+  /* General */
+  /* NAVEGACIÓ */
+  /* ESPAI */
+  /* HEADER */
+  /* MAIN */
+  /* FOOTER */
+}
+body header,
+body main {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+body .email {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 7px;
+  font-size: 32px;
+  border: 2px solid;
+  color: #EBEBEB;
+}
+body .boto {
+  border: 0px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #4049AA;
+}
+body nav {
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  top: 0px !important;
+  padding-top: 10px;
+  color: #2C303F;
+}
+body nav img {
+  max-width: 12em;
+  min-width: 12em;
+  margin-left: 9%;
+}
+body #barra {
+  top: 130px !important;
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  background-color: #EBEBEB;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+body header h1 {
+  margin-bottom: 45px;
+  font-size: 70px;
+  color: #2C303F;
+}
+body header p {
+  margin-bottom: 55px;
+  font-size: 33px;
+  color: #5b5e6d;
+}
+body header p:nth-last-child(2n) a {
+  margin-left: 6px;
+  color: #4049AA;
+}
+body header img {
+  width: 100%;
+}
+body main {
+  width: 100%;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+body main div:first-child {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: #f5f5f5;
+}
+body main div:first-child h2 {
+  padding-top: 75px;
+  padding-bottom: 20px;
+  font-size: 42px;
+  color: #323747;
+  background-color: #f5f5f5;
+}
+body main div:first-child p {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #5b5e6d;
+  background-color: #f5f5f5;
+}
+body main div:first-child button {
+  border: 1px solid;
+  border-radius: 7px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  border-color: #4049AA;
+  color: #4049AA;
+  background-color: #FFF;
+}
+body main div:first-child .wrapper {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+body main div:first-child .wrapper img {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #f5f5f5;
+}
+body main div:first-child .wrapper img:last-child {
+  margin-bottom: 140px;
+}
+body main div:first-child .wrapper .separador {
+  background-color: #EBEBEB;
+}
+body main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+body main div p {
+  color: #323747;
+}
+body main div p:first-child {
+  padding-top: 60px;
+  font-weight: bold;
+  font-size: 42px;
+}
+body main div p a {
+  color: #4049AA;
+}
+body #barra-inf {
+  width: 100%;
+  height: 2px;
+  margin-top: 60px;
+  background-color: #EBEBEB;
+}
+body footer {
+  margin-top: 60px;
+}
+body footer div:nth-child(1) {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+body footer div:nth-child(1) #slack-iso {
+  grid-area: box0;
+  padding: 0;
+  max-width: 6em;
+  min-width: 6em;
+  box-sizing: border-box;
+}
+body footer div:nth-child(1) .ul-1 {
+  width: 100%;
+  grid-area: box1;
+  align-self: start;
+  justify-self: start;
+}
+body footer div:nth-child(1) .ul-2 {
+  width: 100%;
+  grid-area: box2;
+  align-self: left;
+  justify-self: left;
+}
+body footer div:nth-child(1) .ul-3 {
+  width: 100%;
+  grid-area: box3;
+}
+body footer div:nth-child(1) .ul-4 {
+  width: 100%;
+  grid-area: box4;
+}
+body footer div:nth-child(1) ul {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  list-style-type: none;
+  /*                 &:nth-child(3),
+  &:nth-child(4) {
+      margin-top: 30px;
+  } */
+}
+body footer div:nth-child(1) ul li {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #6d6f7a;
+}
+body footer div:nth-child(1) ul li:first-child {
+  font-weight: bold;
+}
+body footer div:nth-last-child(1) {
+  margin-top: 40px;
+  background-color: #f5f5f5;
+  color: #6d6f7a;
+}
+body footer div:nth-last-child(1) ul {
+  list-style-type: none;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+body footer div:nth-last-child(1) ul li {
+  font-size: 32px;
+  background-color: #f5f5f5;
+}
+body footer div:nth-last-child(1) div {
+  font-weight: bold;
+  font-size: 35px;
+  background-color: #f5f5f5;
+}
+body footer div:nth-last-child(1) div div span {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #f5f5f5;
+}
+body footer div:nth-last-child(1) div div .fab {
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+}
+body footer div:nth-last-child(1) div div .fab:nth-child(2) {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+body footer div:nth-last-child(1) div div .fa-chevron-down {
+  height: 40px;
+  width: 40px;
+  font-weight: none;
+  color: black;
+  background-color: #f5f5f5;
+}
+body footer div:nth-last-child(1) div div img {
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+/* EXTRA SMALL */
+@media (max-width: 779px) {
+  body nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  body nav .fa-bars {
+    padding-right: 9%;
+    font-size: 3em;
+    color: #5b5e6d;
+  }
+  body .boto {
+    width: 100%;
+    font-size: 28px;
+    padding: 30px;
+  }
+  body main div:first-child {
+    font-size: 26px;
+  }
+  body main div:first-child button {
+    padding: 26px;
+  }
+  body main div:first-child img {
+    width: 300px;
+  }
+  body main div p:nth-child(2n) {
+    font-size: 34px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+  }
+  body main .wrapper .separador {
+    width: 85%;
+    height: 2px;
+  }
+  body main .wrapper .separador:last-child {
+    width: 116%;
+    padding: 0;
+    background-color: #EBEBEB;
+  }
+  body footer #slack-iso {
+    margin-bottom: 60px;
+  }
+  body footer div:nth-child(1) {
+    display: grid;
+    justify-content: left;
+    align-items: start;
+    row-gap: 20px;
+    column-gap: 50px;
+    grid-template-areas: "box0 box0" "box1 box2" "box3 box4";
+  }
+  body footer div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body footer div:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    min-width: 530px;
+    padding-top: 20px;
+  }
+  body footer div:nth-child(2) div {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* SMALL SCREEN i altres */
+@media (min-width: 780px) and (max-width: 1600px) {
+  body nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) and (max-width: 1199px) {
+  body nav .fa-bars {
+    padding-right: 9%;
+    font-size: 3em;
+    color: #5b5e6d;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) {
+  body header {
+    display: flex;
+    align-items: flex-start;
+  }
+  body header p {
+    font-size: 28px;
+  }
+  body header p:nth-last-child(2n) {
+    font-size: 22px;
+  }
+  body header .email {
+    width: 50%;
+    min-width: 380px;
+    padding: 20px;
+    font-size: 24px;
+  }
+  body header .boto {
+    width: 30%;
+    min-width: 230px;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  body header img {
+    align-self: center;
+    width: 60%;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) {
+  body main div {
+    display: flex;
+    /* MEDIUM SCREEN */
+  }
+  body main div p {
+    font-size: 22px;
+  }
+  body main div button {
+    width: 210px;
+    padding: 22px;
+    font-size: 20px;
+  }
+  body main div .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "box1 sep4 box2" "sep1 sep1 sep1" "box3 sep5 box4" "sep2 sep2 sep2" "box5 sep3 box6" "sep6 sep6 sep6";
+  }
+  body main div .wrapper img {
+    width: 200px;
+  }
+  body main div .wrapper .separador1 {
+    grid-area: sep1;
+    width: 85%;
+    height: 2px;
+  }
+  body main div .wrapper .separador2 {
+    grid-area: sep2;
+    width: 85%;
+    height: 2px;
+  }
+  body main div .wrapper .separador3 {
+    grid-area: sep3;
+    align-self: start;
+    justify-self: center;
+    height: 75%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador4 {
+    grid-area: sep4;
+    justify-self: center;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador5 {
+    grid-area: sep5;
+    justify-self: center;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador6 {
+    grid-area: sep6;
+    width: 85%;
+    height: 2px;
+  }
+  body main div .wrapper .box1 {
+    grid-area: box1;
+    justify-self: end;
+  }
+  body main div .wrapper .box2 {
+    grid-area: box2;
+    justify-self: start;
+  }
+  body main div .wrapper .box3 {
+    grid-area: box3;
+    justify-self: end;
+  }
+  body main div .wrapper .box4 {
+    grid-area: box4;
+    justify-self: start;
+  }
+  body main div .wrapper .box5 {
+    grid-area: box5;
+    justify-self: end;
+  }
+  body main div .wrapper .box6 {
+    grid-area: box6;
+    justify-self: start;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) and (min-width: 961px) and (max-width: 1199px) {
+  body main div .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "box1 sep1 box2 sep2 box3" "sep3 sep3 sep3 sep3 sep3" "box4 sep4 box5 sep5 box6" "sep6 sep6 sep6 sep6 sep6";
+  }
+  body main div .wrapper img {
+    width: 200px;
+  }
+  body main div .wrapper .separador1 {
+    grid-area: sep1;
+    justify-self: center;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador2 {
+    grid-area: sep2;
+    justify-self: center;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador3 {
+    grid-area: sep3;
+    width: 115%;
+    height: 2px;
+  }
+  body main div .wrapper .separador4 {
+    grid-area: sep4;
+    justify-self: center;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador5 {
+    grid-area: sep5;
+    justify-self: center;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+  }
+  body main div .wrapper .separador6 {
+    grid-area: sep6;
+    width: 100%;
+    height: 2px;
+    padding-left: 0;
+  }
+  body main div .wrapper .box1 {
+    grid-area: box1;
+    justify-self: end;
+  }
+  body main div .wrapper .box2 {
+    grid-area: box2;
+  }
+  body main div .wrapper .box3 {
+    grid-area: box3;
+  }
+  body main div .wrapper .box4 {
+    grid-area: box4;
+  }
+  body main div .wrapper .box5 {
+    grid-area: box5;
+  }
+  body main div .wrapper .box6 {
+    grid-area: box6;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) {
+  body main .mid-part {
+    display: grid;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: "box1 box3 box4 ";
+    padding-top: 60px;
+  }
+  body main .mid-part p:nth-child(1) {
+    grid-area: box1;
+    align-self: start;
+    padding: 0px;
+  }
+  body main .mid-part p:nth-child(2) {
+    grid-area: box1;
+    align-self: end;
+  }
+  body main .mid-part input {
+    grid-area: box3;
+    margin: 0;
+    padding: 22px;
+    font-size: 22px;
+    justify-self: end;
+  }
+  body main .mid-part button {
+    grid-area: box4;
+    margin: 0;
+    padding: 24px;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) {
+  body footer > div:first-of-type {
+    padding: 0;
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: "box0 box1 box2 box3 box4";
+    padding-bottom: 10px;
+  }
+  body footer > div:first-of-type #slack-iso {
+    grid-area: box0;
+    justify-self: end;
+    margin: 0;
+    max-width: 4em;
+    min-width: 4em;
+  }
+  body footer > div:first-of-type ul li {
+    font-size: 20px;
+  }
+  body footer > div:first-of-type .ul-1 {
+    grid-area: box1;
+  }
+  body footer > div:first-of-type .ul-2 {
+    grid-area: box2;
+  }
+  body footer > div:first-of-type .ul-3 {
+    grid-area: box3;
+  }
+  body footer > div:first-of-type .ul-4 {
+    grid-area: box4;
+  }
+}
+@media (min-width: 780px) and (max-width: 1600px) {
+  body footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 4%;
+  }
+  body footer > div:last-child ul {
+    display: flex;
+    width: 360px;
+  }
+  body footer > div:last-child ul li {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  body footer > div:last-child div {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-right: 2%;
+  }
+  body footer > div:last-child div div span,
+body footer > div:last-child div div i {
+    font-size: 20px;
+  }
+  body footer > div:last-child div div img {
+    width: 30px;
+    height: 30px;
+  }
+  body footer > div:last-child div div:nth-child(1) {
+    display: flex;
+    align-self: flex-start;
+    width: 240px;
+    padding: 0;
+  }
+  body footer > div:last-child div div:nth-child(2) {
+    height: 40px;
+    width: 150px;
+  }
+}
+@media (max-width: 1199px) {
+  nav ul {
+    visibility: hidden;
+  }
+}
+/* LARGE SCREEN*/
+@media (min-width: 1200px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  nav ul {
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 500px;
+    height: 40px;
+    color: #323747;
+    font-size: 24px;
+  }
+  nav ul li:nth-child(4) {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+    border-color: black;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
