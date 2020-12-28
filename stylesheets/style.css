@@ -331,20 +331,20 @@ body footer div:nth-last-child(1) div div img {
   }
 }
 /* SMALL SCREEN i altres */
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
   body nav {
     display: flex;
     justify-content: space-between;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) and (max-width: 1199px) {
+@media (min-width: 780px) and (max-width: 2200px) and (max-width: 1199px) {
   body nav .fa-bars {
     padding-right: 9%;
     font-size: 3em;
     color: #5b5e6d;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
   body header {
     display: flex;
     align-items: flex-start;
@@ -373,7 +373,7 @@ body footer div:nth-last-child(1) div div img {
     width: 60%;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
   body main div {
     display: flex;
     /* MEDIUM SCREEN */
@@ -456,7 +456,7 @@ body footer div:nth-last-child(1) div div img {
     justify-self: start;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) and (min-width: 961px) and (max-width: 1199px) {
+@media (min-width: 780px) and (max-width: 2200px) and (min-width: 961px) and (max-width: 1199px) {
   body main div .wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -524,7 +524,7 @@ body footer div:nth-last-child(1) div div img {
     grid-area: box6;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
   body main .mid-part {
     display: grid;
     align-items: center;
@@ -555,7 +555,7 @@ body footer div:nth-last-child(1) div div img {
     padding: 24px;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
   body footer > div:first-of-type {
     padding: 0;
     display: grid;
@@ -586,7 +586,7 @@ body footer div:nth-last-child(1) div div img {
     grid-area: box4;
   }
 }
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
   body footer > div:last-child {
     display: flex;
     justify-content: space-between;
@@ -646,7 +646,7 @@ body footer > div:last-child div div i {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    width: 500px;
+    width: 700px;
     height: 40px;
     color: #323747;
     font-size: 24px;

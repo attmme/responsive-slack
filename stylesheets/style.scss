@@ -432,10 +432,9 @@ body {
     }
 }
 
-
 /* SMALL SCREEN i altres */
 
-@media (min-width: 780px) and (max-width: 1600px) {
+@media (min-width: 780px) and (max-width: 2200px) {
     body {
 
         nav {
@@ -825,7 +824,6 @@ body {
     }
 }
 
-
 /* LARGE SCREEN*/
 @media (min-width: 1200px) {
     nav {
@@ -843,10 +841,11 @@ body {
             justify-content: space-around;
             align-items: center;
             list-style-type: none;
-            width: 500px;
+            width: 700px;
             height: 40px;
             color: $goodCompany;
             font-size: 24px;
+
 
             li:nth-child(4) {
                 border: 1px solid;
